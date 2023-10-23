@@ -1,10 +1,16 @@
 import Navbar from 'react-bootstrap/Navbar';
-import { ConnectWallet } from "@thirdweb-dev/react"
+import Button from 'react-bootstrap/Button';
+import {
+  ConnectWallet,
+  useDisconnect
+} from "@thirdweb-dev/react"
 import './App.css'
 
-import logoImage from "../images/icon_640.jpg"
+import logoImage from "../images/icon_640.png"
 
-const Navigation = () => {
+const Navigation = ({ walletAddress }) => {
+  const disconnect = useDisconnect();
+
   return (
     <Navbar className='navigation-section' expand='lg'>
       <img
@@ -18,13 +24,23 @@ const Navigation = () => {
 
       <Navbar.Toggle aria-controls="nav" />
       <Navbar.Collapse id="nav" className="justify-content-end">
-        <ConnectWallet
-          theme={"light"}
-          btnTitle={"Connect"}
-          modalSize={"compact"}
-          welcomeScreen={{}}
-          modalTitleIconUrl={""}
-        />
+        {walletAddress ? (
+          <Button
+            variant="dark"
+            style={{ width: "150px", height: "50px", marginTop: "20px", color: "white" }}
+            onClick={disconnect}
+          >
+            Disconnect...
+          </Button>
+        ) : (
+          <ConnectWallet
+            theme={"light"}
+            btnTitle={"Connect"}
+            modalSize={"compact"}
+            welcomeScreen={{}}
+            modalTitleIconUrl={logoImage}
+          />
+        )}
       </Navbar.Collapse>
     </Navbar>
   )

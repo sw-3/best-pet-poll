@@ -1,7 +1,7 @@
 /* App.css */
 
 .navigation-section {
-  background-color: #f0f0f0;
+  background-color: #cfd8ff;
   padding: 20px;
   border-right: 2px solid #06e;
   border-left: 2px solid #06e;
@@ -9,7 +9,6 @@
 
 .navbar-title {
   font-size: 32px;
-  background-color: #f0f0f0;
 }
 
 .login-button {
@@ -31,7 +30,7 @@
 }
 
 .voting-section {
-  background-color: #e0e0f0;
+  background-color: #cfd8ff;
   border-right: 2px solid #06e;
   border-left: 2px solid #06e;
   display: flex;
