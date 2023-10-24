@@ -15,7 +15,7 @@ import birdImage from "../images/parrot_640.jpg"
 import reptileImage from "../images/lizard_640.jpg"
 
 // set an initial value for the vote counts
-const currentVotes = {
+const initialVotes = {
   Cat: 0,
   Dog: 0,
   Horse: 0,
@@ -26,7 +26,7 @@ const currentVotes = {
 
 const Poll = ({ walletAddress, bestPetPollAddr, bestPetPoll }) => {
 
-  const [votes, setVotes] = useState(currentVotes);
+  const [votes, setVotes] = useState(initialVotes);
 
   var updatedVotes = votes;
   var votesChanged = false;

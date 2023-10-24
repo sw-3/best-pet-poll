@@ -17,7 +17,7 @@ const Header = ({ walletAddress }) => {
       ) : (
         <div>
           <span style={{fontSize:24 + 'px'}}>
-            To see the vote tally and cast a vote:
+            To cast a vote:
           </span>
           <br />
           <span>
