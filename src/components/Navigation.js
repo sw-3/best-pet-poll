@@ -2,11 +2,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import {
   ConnectWallet,
-  useDisconnect
+  useDisconnect,
+  lightTheme
 } from "@thirdweb-dev/react"
 import './App.css'
 
-import logoImage from "../images/icon_640.png"
+import logoImage from "../images/page-logo_640.png"
 
 const Navigation = ({ walletAddress }) => {
   const disconnect = useDisconnect();
@@ -34,7 +35,14 @@ const Navigation = ({ walletAddress }) => {
           </Button>
         ) : (
           <ConnectWallet
-            theme={"light"}
+            theme={lightTheme({
+              colors: {
+                primaryButtonBg: "#4d2283",
+                primaryButtonHoverBg: "#4d2283",
+                accentButtonBg: "#4d2283",
+                accentButtonHoverBg: "#4d2283",
+              },
+            })}
             btnTitle={"Connect"}
             modalSize={"compact"}
             welcomeScreen={{}}

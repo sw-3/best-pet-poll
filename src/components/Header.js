@@ -21,7 +21,7 @@ const Header = ({ walletAddress }) => {
           </span>
           <br />
           <span>
-            Connect to the poll with your email or Google account!
+            Connect to the poll with your email, Google account, or as a Guest.
           </span>
         </div>
       )}

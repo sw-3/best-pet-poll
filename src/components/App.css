@@ -1,10 +1,10 @@
 /* App.css */
 
 .navigation-section {
-  background-color: #cfd8ff;
+  background-color: #e8e0f4;
   padding: 20px;
-  border-right: 2px solid #06e;
-  border-left: 2px solid #06e;
+  border-right: 2px solid #4d2283;
+  border-left: 2px solid #4d2283;
 }
 
 .navbar-title {
@@ -16,9 +16,9 @@
 }
 
 .header-section {
-  background-color: #007bff;
+  background-color: #4d2283;
   color: #fff;
-  border: 2px solid #06e;
+  border: 2px solid #4d2283;
   padding: 20px;
   margin-top: 0px;
   text-align: center;
@@ -30,9 +30,9 @@
 }
 
 .voting-section {
-  background-color: #cfd8ff;
-  border-right: 2px solid #06e;
-  border-left: 2px solid #06e;
+  background-color: #b6a1cf;
+  border-right: 2px solid #4d2283;
+  border-left: 2px solid #4d2283;
   display: flex;
   text-align: center; /* Center the content */
   flex: 1 1 auto; /* Allow the section to grow and fill the available space */
@@ -47,6 +47,7 @@
 .pet-label h3 {
   text-align: center;
   font-size: 24px;
+  color: #3b1a65;
 }
 
 /* Updated button styling */
@@ -64,32 +65,46 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #7a46bc;
 }
 
-/* Style for the footer */
+/* Style for the footer section */
 .footer-section {
-  background-color: #007bff;
-  color: #fff;
-  border: 2px solid #06e;
+  background-color: #e8e0f4;
+  color: #000;
+  border: 2px solid #4d2283;
   height: 80px;
-  text-align: center;
-  padding: 10px 0;
+  /* text-align: center; */
+  padding: 20px 0;
 }
 
+/* Style for the footer elements */
 .footer-section p {
   font-size: 16px;
 }
 
-/* Style for the footer links */
 .footer-section a {
-  color: white;
+  color: #000;
   text-decoration: underline;
   transition: color 0.3s;
 }
 
 .footer-section a:hover {
-  color: lightblue; /* Change the link color to light blue on hover */
+  color: #7a46bc; 
+}
+
+.sw3-link {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.thirdweb-link {
+  float: right;
+  margin-right: 10px;
+}
+
+.social-links {
+  margin-left: 50px;
 }
 
 /* Style for the pet logos */
