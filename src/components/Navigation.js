@@ -8,6 +8,7 @@ import {
 import './App.css'
 
 import logoImage from "../images/page-logo_640.png"
+import privacyPolicy from "../images/bestpetpoll-privacy-policy.pdf"
 
 const Navigation = ({ walletAddress }) => {
   const disconnect = useDisconnect();
@@ -38,15 +39,13 @@ const Navigation = ({ walletAddress }) => {
             theme={lightTheme({
               colors: {
                 primaryButtonBg: "#4d2283",
-                primaryButtonHoverBg: "#4d2283",
                 accentButtonBg: "#4d2283",
-                accentButtonHoverBg: "#4d2283",
               },
             })}
             btnTitle={"Connect"}
             modalSize={"compact"}
-            welcomeScreen={{}}
             modalTitleIconUrl={logoImage}
+            privacyPolicyUrl={privacyPolicy}
           />
         )}
       </Navbar.Collapse>
