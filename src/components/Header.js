@@ -4,25 +4,25 @@ const Header = ({ walletAddress }) => {
   return (
     <div className="header-section">
       <h1 className="title">Vote for the Best Pet</h1>
+      <h2 className="subtitle">Your vote is recorded on a blockchain!</h2>
       {walletAddress ? (
         <div>
-          <p style={{fontSize:18 + 'px'}}>
+          <p className="instruction">
             Click a button below to vote for which animal makes the best pet!
           </p>
-          <p>
+          <span><i>
             (<strong>NOTE: </strong>Everyone gets 1 vote! 
               If you vote again it will cancel your previous vote.)
-          </p>
+          </i></span>
         </div>
       ) : (
         <div>
-          <span style={{fontSize:24 + 'px'}}>
-            To cast a vote:
-          </span>
-          <br />
-          <span>
-            Connect to the poll with your email, Google account, or as a Guest.
-          </span>
+          <p className="instruction">
+            To cast a vote, connect with your email, Google, or as a Guest.
+          </p>
+          <span><i>
+            (<strong>NOTE: </strong>This is a test application, interacting with a test blockchain.)
+          </i></span>
         </div>
       )}
     </div>
