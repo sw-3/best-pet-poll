@@ -29,7 +29,6 @@ const Navigation = ({ walletAddress }) => {
         {walletAddress ? (
           <Button
             variant="dark"
-            style={{ width: "150px", height: "50px", marginTop: "20px", color: "white" }}
             onClick={disconnect}
           >
             Disconnect...
