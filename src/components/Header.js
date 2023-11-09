@@ -4,7 +4,7 @@ const Header = ({ walletAddress }) => {
   return (
     <div className="header-section">
       <h1 className="title">Vote for the Best Pet!</h1>
-      <h2 className="subtitle">(Votes recorded on a blockchain.)</h2>
+      <h2 className="subtitle">Votes are recorded on a blockchain.</h2>
       {walletAddress ? (
         <div>
           <p className="instruction">

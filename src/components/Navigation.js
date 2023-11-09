@@ -31,7 +31,7 @@ const Navigation = ({ walletAddress }) => {
             variant="dark"
             onClick={disconnect}
           >
-            Disconnect...
+            Disconnect
           </Button>
         ) : (
           <ConnectWallet
