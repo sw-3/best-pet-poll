@@ -29,7 +29,7 @@ const Header = ({ walletAddress }) => {
             This is a fun demo app using the Mumbai testnet.<br />
             <span style={{fontSize: "18px"}}>
               It is <strong style={{fontSize: "22px", color: "#fcd840"}}>
-              this easy</strong> to interact with a blockchain!
+              easy</strong> to interact with a blockchain!
             </span>
           </i></span>
         </div>
