@@ -1,11 +1,13 @@
 # Best Pet Poll
 
+[Best Pet Poll is live here!](https://cold-river-9444.on.fleek.co/)
+
 This project is a demo blockchain app using [thirdweb's](https://thirdweb.com/) account abstraction toolkit.
 
-Any user can connect to this app with just their email address, Google account, or even as a Guest. (No wallet or crypto needed!)
+Any user can connect to the app with just their email address, Google account, or even as a Guest. (No wallet or crypto needed!)
 
 ## Usage
-Best Pet Poll is deployed [here](https://cold-river-9444.on.fleek.co/). It is a simple app to allow anyone to vote for their favorite type of pet. After connecting to the site, the voting buttons are displayed and the user may cast their vote. Subsequent votes will always replace the previous vote (1 vote per person).
+Connect and vote for your favorite type of pet. After connecting to the site, the voting buttons are displayed and you may cast your vote. Subsequent votes will always replace the previous vote (1 vote per person).
 
 ## Smart Contract Info
 The source for the smart contract which tracks this poll can be found [in this repo](https://github.com/sw-3/aa-test-contracts).
